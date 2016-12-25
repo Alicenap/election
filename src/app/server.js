@@ -2,7 +2,7 @@
 
 // Imports
 const express = require('express');
-const config = require('./common/env').config(); 
+const config = require('../common/env').config(); 
 
 // App
 const app = express();

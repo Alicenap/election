@@ -1,0 +1,12 @@
+{
+	"dev": {
+		"app": {"mode": "dev", "port": 80},
+		"mongodb": {"host": "localhost", "port": 27017},
+		"errorHandlerOptions": {"dumpExceptions": true, "showStack": true}
+	},
+	"prod": {
+		"app": {"mode": "prod", "port": 80},
+		"mongodb": {"host": "localhost", "port": 27017},
+		"errorHandlerOptions": {"dumpExceptions": false, "showStack": false}
+	}
+}

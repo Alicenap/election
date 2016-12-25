@@ -1,9 +1,8 @@
 'use strict';
 
+// Imports
 const express = require('express');
-
-// Constants
-const PORT = 80;
+const config = require('./common/env').config(); 
 
 // App
 const app = express();
@@ -11,5 +10,6 @@ app.get('/', function (req, res) {
     res.send('Hello world');
 });
 
-app.listen(PORT);
-console.log('Running on http://localhost:' + PORT);
+app.listen(config.app.port);
+console.log('Running in ' + config.app.mode + ' mode');
+console.log('Waiting for connections on port ' + config.app.port);

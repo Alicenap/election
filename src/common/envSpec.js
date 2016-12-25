@@ -24,7 +24,7 @@ describe("enviroment", function() {
       const config = env.config();
 	  expect(config.app.mode).toBe("dev");
     });
-    it("rdefaults to development when NODE_ENV is provided as dev", function() {
+    it("defaults to development config when NODE_ENV is provided as dev", function() {
 	  process.env.NODE_ENV = "dev";
       const config = env.config();
 	  expect(config.app.mode).toBe("dev");

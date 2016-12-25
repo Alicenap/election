@@ -9,7 +9,7 @@
     "test": "jasmine-node spec"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "4.13.3"
   },
   "devDependencies": {
     "jasmine-node": "1.14.5",

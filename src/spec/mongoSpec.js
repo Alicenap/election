@@ -1,9 +1,9 @@
 'use strict';
 
-var MongoClient = require('mongodb').MongoClient;
+const MongoClient = require('mongodb').MongoClient;
 
 // Connection URL
-var url = 'mongodb://localhost:27017/election';
+const url = 'mongodb://localhost:27017/election';
 
 describe("MongoDB", function() {
   describe("connection", function() {

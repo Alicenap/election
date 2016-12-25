@@ -1,4 +1,9 @@
 {
+	"test": {
+		"app": {"mode": "test", "port": 80},
+		"mongodb": {"host": "localhost", "port": 27017},
+		"errorHandlerOptions": {"dumpExceptions": true, "showStack": true}
+	},
 	"dev": {
 		"app": {"mode": "dev", "port": 80},
 		"mongodb": {"host": "localhost", "port": 27017},

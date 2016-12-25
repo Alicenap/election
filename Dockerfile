@@ -2,10 +2,10 @@
 FROM node:6.9.2-wheezy
 
 # Mount point of source folder in container
-ADD ./src /var/www/election
+ADD ./src /src
 
 # Define workdir for docker
-WORKDIR /var/www/election
+WORKDIR /src
 
 # Run command at workdir
 RUN npm install

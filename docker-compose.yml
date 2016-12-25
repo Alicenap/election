@@ -1,33 +1,33 @@
 version: '2'
 services:
 
-  web:
+  app:
     build: .
     volumes:
-      - ./src:/app'
+      - ./src:/src'
     ports:
       - "80:80"
     depends_on:
-      - mongo
+      - mongodb
     networks:
       - all
     environment:
-      MONGODB_URI: "mongodb://mongo:27017/election"
+      NODE_ENV: "dev"
 
-  mongo:
-    image: mongo:3
+  mongodb:
+    image: mongo:3.4.0
     command: mongod --smallfiles
     volumes_from:
-      - mongodata
+      - mongodb-data
     ports:
       - "27017:27017"
     networks:
       - all
 
-  mongodata:
+  mongodb-data:
     image: tianon/true
     volumes:
-      - /data/mongo
+      - ./src/mongodb/data:/data
 
 networks:
   all:

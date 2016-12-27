@@ -11,7 +11,7 @@ WORKDIR /src
 RUN npm install
 
 # Port Forwording
-EXPOSE 80
+EXPOSE 3000
 
 # Define command to run
 CMD [ "npm", "start" ]

@@ -4,7 +4,7 @@
 var request = require("request");
 
 // Base url
-var baseUrl = "http://localhost:80/"
+var baseUrl = "http://localhost:3000/"
 
 describe("Server", function() {
   describe("GET /", function() {
